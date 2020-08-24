@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: none;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+.button {
+    min-width: 48px;
+    height: 48px;
+    display: inline-block;
+    text-align: center;
+    padding: 13px 10px 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background: #cccccc;
+    margin-right: 4px;
+}
+.button--active {
+    background-color: #ff2a6b;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100%;
+    justify-self: start;
+    display: flex;
+    justify-content: flex-end;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.scroll-btn {
+    text-align: center;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 33%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #fd7272;
+    overflow: hidden;
+    position: relative;
+}
+.scroll-btn i {
+    line-height: 70px;
+    font-size: 24px;
+    transition: 0.4s linear;
+}
+.scroll-btn:hover i {
+    transform: scale(1.2);
+    color: #f1f1f1;
+}
+.scroll-btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #fd7272;
+    transform: rotate(45deg);
+    left: -120%;
+    top: 90%;
+    transition: 0.4s linear;
+}
+.scroll-btn:hover::before {
+    top: -10%;
+    left: -10%;
+}

@@ -1,0 +1,320 @@
+.home-banner {
+    background-image: url(../images/slider-bg-2.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+.home-baner__text {
+    display: flex;
+    flex-flow: column;
+    height: 695px;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.5 ease;
+}
+.home-banner__title-1,
+.home-banner__title-2,
+.home-banner__title-3 {
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+}
+.home-banner__title-1 > span,
+.home-banner__title-3 > span,
+.home-banner__title-2 > span {
+    display: inline-block;
+    border-radius: 5px;
+    position: relative;
+    opacity: 1;
+    transition: all 0.5 ease;
+}
+.home-banner__title-1 {
+    font-size: 40px;
+    z-index: 1;
+
+    animation-name: zoomIn;
+    animation-duration: 0.75s;
+    animation-fill-mode: both;
+}
+.home-banner__title-1 > span {
+    padding: 0 28px;
+    background: #ff2a6b;
+    transform: rotate(4deg);
+}
+.home-banner__title-2 {
+    z-index: 2;
+
+    animation-name: zoomIn;
+    animation-delay: 0.5s;
+    animation-duration: 0.75s;
+    animation-fill-mode: both;
+}
+.home-banner__title-3 {
+    animation-name: zoomIn;
+    animation-delay: 1s;
+    animation-duration: 0.75s;
+    animation-fill-mode: both;
+}
+.home-banner__title-2 > span {
+    font-size: 30px;
+    padding: 5px 28px;
+    background: #fdc856;
+    left: 0;
+    top: 0;
+    box-shadow: 0px -6px 20px 0px rgba(0, 0, 0, 0.3);
+}
+.home-banner__title-3 > span {
+    font-size: 20px;
+    padding: 10px 28px;
+    background: #bdde64;
+    top: 0;
+}
+@media only screen and (min-width: 576px) {
+    .home-banner__title-1 {
+        font-size: 60px;
+    }
+    .home-banner__title-2 > span {
+        font-size: 45px;
+    }
+    .home-banner__title-3 > span {
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .home-banner__title-1 {
+        font-size: 72px;
+    }
+    .home-banner__title-2 > span {
+        font-size: 48px;
+    }
+    .home-banner__title-3 > span {
+        font-size: 36px;
+    }
+}
+
+/* ******* */
+/* evaluate */
+/* ******* */
+
+.evaluate {
+    background-color: #f4f7fb;
+    padding-bottom: 96px;
+}
+.evaluate__row {
+    padding-top: 96px;
+}
+.evaluate__title {
+    margin-bottom: 48px;
+    position: relative;
+    padding-top: 18px;
+}
+.evaluate__title::after {
+    position: absolute;
+    content: "";
+    width: 56px;
+    height: 5px;
+    left: 0;
+    top: 0;
+    background: #ff2a6b;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+}
+.evaluate__title > h3 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #474747;
+}
+ul.evaluate__list li {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.rating {
+    display: flex;
+    color: #fbb710;
+    font-size: 10px;
+    padding-top: 12px;
+}
+i.fade {
+    color: #e0e3e4;
+}
+.rating > li {
+    padding-right: 2px;
+}
+ul.evaluate__list > li > img {
+    height: 77px;
+    width: 77px;
+}
+.evaluate__info {
+    padding-left: 15px;
+}
+.evaluate__info > span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ff2a6b;
+}
+.evaluate__info h5 {
+    margin-bottom: 12px;
+    padding-top: 2px;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+    color: #474747;
+}
+
+.evaluate__blog {
+    margin-top: 30px;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.15);
+}
+.evalute__blog-image {
+    position: relative;
+}
+.evalute__blog-image .date {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #ff2a6b;
+    color: #fff;
+    font-size: 14px;
+    padding: 15px 24px 15px 30px;
+}
+.evalute__blog-image span {
+    position: relative;
+}
+.evalute__blog-image span::after {
+    position: absolute;
+    content: "";
+    right: -54px;
+    top: -15.4px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 51px solid #ff2a6b;
+}
+.evalute__blog-image > img {
+    width: 100%;
+    vertical-align: middle;
+}
+.evalute__blog-info {
+    padding: 40px 40px 45px;
+    background: #fff;
+    position: relative;
+}
+.evalute__blog-info > h4 {
+    font-size: 18px;
+    margin: 12px 0;
+    font-weight: 500;
+    color: #474747;
+}
+.evalute__blog-info > span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #ff2a6b;
+    margin: 15px 0;
+}
+.evalute__blog-info > p {
+    font-size: 15px;
+    color: #838383;
+    line-height: 2.1;
+    font-weight: 300;
+    margin: 15px 0;
+}
+.comment {
+    font-size: 12px;
+    color: #474747;
+}
+.arrow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    width: 41px;
+    height: 41px;
+    align-items: center;
+    justify-content: center;
+    background: #ff2a6b;
+    color: #fff;
+    font-size: 23px;
+}
+
+/* review */
+
+.review {
+    background-color: #fdc856;
+    padding: 65px 0;
+}
+.review__row {
+    justify-content: center;
+}
+.review__card {
+    background-color: white;
+    display: flex;
+    margin: 10px 0;
+}
+.review__image {
+    float: left;
+    position: relative;
+    width: 166px;
+    height: 160px;
+}
+.review__date {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #ff2a6b;
+    color: #fff;
+    font-size: 12px;
+    padding: 9px 2px 8px 13px;
+}
+.review__date span {
+    position: relative;
+}
+.review__date::after {
+    position: absolute;
+    content: "";
+    left: 91px;
+    top: 0;
+    border-top: 35.4px solid #ff2a6b;
+    border-right: 30px solid transparent;
+}
+.review__image > img {
+    width: 100%;
+}
+.author-image {
+    background-image: url(../images/author.jpg);
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-size: 100%;
+}
+.review__info {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.review__info > span {
+    font-size: 12px;
+    font-weight: 500;
+    color: #ff2a6b;
+}
+.review__info > h5 {
+    margin-bottom: 12px;
+    padding-top: 2px;
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+    color: #474747;
+}
+
+.review__author {
+    display: flex;
+    padding-top: 15px;
+}
+.review__author > p {
+    padding-left: 20px;
+    padding-top: 5px;
+    font-size: 14.1px;
+    color: #838383;
+    line-height: 2.1;
+}

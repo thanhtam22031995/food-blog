@@ -1,0 +1,120 @@
+.hero {
+    display: flex;
+    padding: 60px 0;
+    background-image: url(../images/page-top-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+}
+.zoom-in {
+    animation-name: zoomIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+@keyframes zoomIn {
+    from {
+        transform: scale(0.2);
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.hero__title {
+    padding: 0px 30px;
+    border-radius: 4px;
+    color: white;
+    background-color: #ff2a6b;
+    font-size: 48px;
+    font-weight: bold;
+    box-shadow: 0px 90px 100px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    line-height: normal;
+}
+@media only screen and (min-width: 576px) {
+    .hero__title {
+        font-size: 64px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .hero__title {
+        font-size: 72px;
+    }
+}
+
+/* **** */
+/* about */
+/* **** */
+.about {
+    margin: 96px 0;
+}
+.about__row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -15px;
+    padding: 0 15px;
+}
+.about__descrip h2 {
+    margin-bottom: 65px;
+    font-size: 36px;
+    font-weight: 600;
+    color: #474747;
+}
+.about__descrip p {
+    font-size: 14.1px;
+    color: #838383;
+    line-height: 2.1;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+a.readmore {
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 178px;
+    text-align: center;
+    padding: 18px 5px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    background: #ff2a6b;
+    text-decoration: none;
+}
+.about__image-banner img {
+    width: 100%;
+}
+
+/* **** */
+/* fact */
+/* **** */
+.fact {
+    background-color: #eff3f7;
+    padding: 115px 0;
+}
+ul.fact__item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 0 -15px;
+}
+ul.fact__item > li {
+    text-align: center;
+}
+.fact__item img {
+    width: 79px;
+}
+ul.fact__item h2 {
+    font-size: 48px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    color: #474747;
+}
+ul.fact__item p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #474747;
+}
