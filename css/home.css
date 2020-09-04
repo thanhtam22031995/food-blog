@@ -29,7 +29,7 @@
     transition: all 0.5 ease;
 }
 .home-banner__title-1 {
-    font-size: 40px;
+    font-size: 36px;
     z-index: 1;
 
     animation-name: zoomIn;
@@ -229,8 +229,8 @@ ul.evaluate__list > li > img {
 
     display: flex;
     flex-flow: row nowrap;
-    width: 41px;
-    height: 41px;
+    width: 40px;
+    height: 40px;
     align-items: center;
     justify-content: center;
     background: #ff2a6b;
@@ -250,13 +250,16 @@ ul.evaluate__list > li > img {
 .review__card {
     background-color: white;
     display: flex;
+    flex-flow: column wrap;
     margin: 10px 0;
+    align-items: center;
+    padding: 15px;
 }
 .review__image {
-    float: left;
     position: relative;
     width: 166px;
     height: 160px;
+    padding: 0;
 }
 .review__date {
     position: absolute;
@@ -292,6 +295,18 @@ ul.evaluate__list > li > img {
 .review__info {
     padding-left: 30px;
     padding-top: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+@media only screen and (min-width: 576px) {
+    .review__info {
+        display: block;
+    }
+    .review__card {
+        flex-flow: row wrap;
+        padding: 0;
+    }
 }
 .review__info > span {
     font-size: 12px;

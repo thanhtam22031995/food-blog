@@ -3,7 +3,7 @@ const menu = document.querySelector('#magicMenu')
 if (button) {
     button.addEventListener('click', (e) => {
         // boxx.classList.add('active')
-        button.classList.toggle('active')
+        button.classList.toggle('menu-btn--active')
         if (menu) {
             menu.classList.toggle('activemenu')
         }
@@ -11,10 +11,3 @@ if (button) {
 }
 
 
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
-}

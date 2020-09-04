@@ -4,36 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Food Blog</title>
 
-    <meta name="title" content="About-Food-blog">
+    <!-- Primary Meta Tags -->
+    <title>Food-blog About</title>
+    <meta name="title" content="Food-blog About">
     <meta name="description" content="Healthy Recipes from the best chefs for all the foodies">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://food-blog-blush.vercel.app/about.html">
-    <meta property="og:title" content="Food-blog">
+    <meta property="og:title" content="Food-blog About">
     <meta property="og:description" content="Healthy Recipes from the best chefs for all the foodies">
-    <meta property="og:image" content="https://food-blog-blush.vercel.app/images/recipes/3.jpg">
+    <meta property="og:image" content="https://food-blog-blush.vercel.app/images/recipes/6.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://food-blog-blush.vercel.app/about.html">
-    <meta property="twitter:title" content="Food-blog">
+    <meta property="twitter:title" content="Food-blog About">
     <meta property="twitter:description" content="Healthy Recipes from the best chefs for all the foodies">
-    <meta property="twitter:image" content="https://food-blog-blush.vercel.app/images/recipes/3.jpg">
+    <meta property="twitter:image" content="https://food-blog-blush.vercel.app/images/recipes/6.jpg">
 
 
     <script src="https://kit.fontawesome.com/8bf75b784d.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/footer.css">
-
 </head>
 
 <body>
@@ -72,9 +73,9 @@
                     <div class="header-bot__button">
                         <a href="#" class="header-bot__search"><i class="fas fa-search"></i></a>
                         <div id="magicBox" class="menu-btn">
-                            <div class="aaa1 active"></div>
-                            <div class="aaa2 active"></div>
-                            <div class="aaa3 active"></div>
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
                         </div>
                     </div>
                 </div>
@@ -93,18 +94,21 @@
         <section class="about">
             <div class="container">
                 <div class="row about__row">
-                    <div class="col-12 col-lg-6 about__descrip">
-                        <h2 class="about__title">About our great team</h2>
-                        <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                    <div data-aos-delay="300" data-aos="fade-up" class="col-12 col-lg-6 about__descrip">
+                        <h2 data-aos-delay="300" data-aos="fade-up" class="about__title">About our great team</h2>
+                        <p data-aos-delay="300" data-aos="fade-up" class="about__text">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing
+                            elit. Vestibulum
                             nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed
                             metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis
                             purus. Orci varius natoque penatibus et magni. Lorem ipsum dolor sit amet, consectetur
                             adipiscing elit. Vestibulum nec varius dui. Suspendisse potenti. Vestibulum ac pellentesque
                             tortor. Aenean congue sed metus in iaculis. Cras a tortor enim. Phasellus posuere vestibulum
                             ipsum, eget lobortis purus. Orci varius natoque penatibus et magni.</p>
-                        <a href="#" class="readmore">Read more</a>
+                        <a data-aos-delay="300" data-aos="fade-up" href="#" class="readmore">Read more</a>
                     </div>
-                    <div class="col-12 col-lg-6 about__image-banner"><img src="images/about.jpg" alt=""></div>
+                    <div data-aos-delay="300" data-aos="fade-up" class="col-12 col-lg-6 about__image-banner"><img
+                            src="images/about.jpg" alt=""></div>
                 </div>
             </div>
         </section>
@@ -130,9 +134,7 @@
                 </ul>
             </div>
         </section>
-        <div class="scroll-to-top">
-            <a href="#" class="scroll-btn"><i class="fas fa-angle-double-up"></i></a>
-        </div>
+
     </main>
     <footer>
         <section class="footer-bot">
@@ -164,7 +166,17 @@
             </div>
         </section>
     </footer>
+    <div class="to-top">
+        <a href="#" class="scroll-btn">
+            <i class="fas fa-angle-double-up"></i>
+        </a>
+    </div>
 
+    <script src="js/scroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

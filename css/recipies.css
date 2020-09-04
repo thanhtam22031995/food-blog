@@ -3,6 +3,7 @@
 }
 
 .recipies__title {
+    margin: 0 -15px;
     padding-left: 15px;
     position: relative;
 }
@@ -38,28 +39,16 @@
 }
 .recipies__warp {
     position: absolute;
-    width: 100%;
+    width: 80%;
     bottom: 0;
     left: 0;
-    padding-right: 110px;
     overflow: hidden;
     margin-left: 15px;
+    clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
+    background: #ff2a6b;
 }
 .recipies__info {
     padding: 17px 25px 15px;
-    background: #ff2a6b;
-    position: relative;
-}
-
-.recipies__info::after {
-    position: absolute;
-    content: "";
-    width: 53px;
-    height: 120px;
-    right: -27px;
-    bottom: 0;
-    background: #ff2a6b;
-    transform: rotate(27deg);
 }
 
 .recipies__info > h3 {

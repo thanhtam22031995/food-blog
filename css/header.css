@@ -37,18 +37,20 @@ ul.social-list a {
 /* navigation */
 /* ********** */
 .header-bot {
-    margin: 15px;
+    padding: 15px;
     z-index: 1000;
+    position: relative;
 }
+
 .header-bot__menu {
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 15px;
+    margin-bottom: -15px;
 }
+
 .logo img {
     height: 48px;
-}
-.main-menu {
-    display: none;
 }
 
 .header-bot__search {
@@ -72,22 +74,23 @@ ul.social-list a {
 .main-menu {
     position: absolute;
     left: 0;
-    top: 140px;
+    top: 100%;
 
     display: flex;
     flex-flow: column nowrap;
 
     background-color: #fff;
     width: 100%;
-    padding: 0px 0 15px 0px;
     height: 250px;
-    opacity: 0;
-    max-height: 0px;
-    z-index: 500;
+    /* opacity: 0; */
+    max-height: 0;
+    overflow: hidden;
+
     transition-duration: 0.5s;
 }
 .main-menu a {
     padding: 12px;
+    padding-right: 0;
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #ddd;
     color: #333;
@@ -97,13 +100,13 @@ ul.social-list a {
     color: #ff2a6b;
 }
 .main-menu.activemenu {
-    opacity: 1;
+    /* opacity: 1; */
     max-height: 500px;
 }
 .menu-btn {
     margin-top: -8px;
 }
-.aaa1 {
+.line1 {
     background-color: black;
     width: 30px;
     height: 4px;
@@ -111,28 +114,28 @@ ul.social-list a {
 
     transition-duration: 0.2s;
 }
-.aaa2 {
+.line2 {
     background-color: black;
     width: 30px;
     height: 4px;
     margin-bottom: 6.5px;
     transition-duration: 0.1s;
 }
-.aaa3 {
+.line3 {
     background-color: black;
     width: 30px;
     height: 4px;
     transition-duration: 0.2s;
 }
-.active .aaa1 {
+.menu-btn--active .line1 {
     transform: rotate(45deg);
     transform-origin: center left;
     width: 30px;
 }
-.active .aaa2 {
+.menu-btn--active .line2 {
     opacity: 0;
 }
-.active .aaa3 {
+.menu-btn--active .line3 {
     transform: rotate(-45deg);
     transform-origin: center left;
     transition-timing-function: ease;
@@ -144,9 +147,6 @@ ul.social-list a {
 }
 
 @media only screen and (min-width: 576px) {
-    .main-menu {
-        top: 160px;
-    }
     .logo img {
         height: 64px;
     }
@@ -154,12 +154,13 @@ ul.social-list a {
 @media only screen and (min-width: 768px) {
     .main-menu {
         position: static;
+        display: flex;
         flex-flow: row wrap;
         opacity: 1;
         align-content: center;
         width: auto;
         height: auto;
-
+        max-height: none;
         padding-top: 10px;
         padding-left: 0px;
     }

@@ -4,11 +4,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Detail</title>
+
+
+    <!-- Primary Meta Tags -->
+    <title>Food-Blog Recipe Detail</title>
+    <meta name="title" content="Food-Blog Recipe Detail">
+    <meta name="description" content="Healthy Recipes from the best chefs for all the foodies">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://food-blog-blush.vercel.app/recipedetail.html">
+    <meta property="og:title" content="Food-Blog Recipe Detail">
+    <meta property="og:description" content="Healthy Recipes from the best chefs for all the foodies">
+    <meta property="og:image" content="https://food-blog-blush.vercel.app/images/recipes/5.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://food-blog-blush.vercel.app/recipedetail.html">
+    <meta property="twitter:title" content="Food-Blog Recipe Detail">
+    <meta property="twitter:description" content="Healthy Recipes from the best chefs for all the foodies">
+    <meta property="twitter:image" content="https://food-blog-blush.vercel.app/images/recipes/5.jpg">
+
+
     <script src="https://kit.fontawesome.com/8bf75b784d.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap"
         rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/header.css">
@@ -54,9 +76,9 @@
                     <div class="header-bot__button">
                         <a href="#" class="header-bot__search"><i class="fas fa-search"></i></a>
                         <div id="magicBox" class="menu-btn">
-                            <div class="aaa1 active"></div>
-                            <div class="aaa2 active"></div>
-                            <div class="aaa3 active"></div>
+                            <div class="line1"></div>
+                            <div class="line2"></div>
+                            <div class="line3"></div>
                         </div>
                     </div>
                 </div>
@@ -70,7 +92,7 @@
         <section class="detail-banner"></section>
         <section class="recipe-detail">
             <div class="container">
-                <div class="recipe-detail__title">
+                <div data-aos="fade-up" class="recipe-detail__title">
                     <div class="recipe-begin">
                         <span>For Begginers</span>
                     </div>
@@ -87,77 +109,79 @@
 
 
                 <div class="row recipe-detail__row">
-                    <div class="col-12 col-lg-5 recipe-detail__select-bar">
-                        <div class="recipe-detail__time">
-                            <div class="recipe-detail__text">
-                                <p>Prep: 15 mins</p>
-                                <p>Cook: 30 mins</p>
-                                <p>Yields: 8 Servings</p>
+                    <div class="col-12 col-lg-5">
+                        <div class="recipe-detail__select-bar">
+                            <div class="recipe-detail__time">
+                                <div data-aos="fade-up" class="recipe-detail__text">
+                                    <p>Prep: 15 mins</p>
+                                    <p>Cook: 30 mins</p>
+                                    <p>Yields: 8 Servings</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="recipe-detail__ingredients">
-                            <h3 class="ingredients__title">Ingredients</h3>
-                            <div class="recipe-detail__check">
-                                <input type="checkbox" id="food1">
-                                <label for="food1">4 Tbsp (57 gr) butter</label>
-                            </div>
-                            <div class="recipe-detail__check">
-                                <input type="checkbox" id="food2">
-                                <label for="food2">2 large eggs</label>
-                            </div>
-                            <div class="recipe-detail__check">
-                                <input type="checkbox" id="food3">
-                                <label for="food3">2 yogurt containers granulated sugar</label>
-                            </div>
-                            <div class="recipe-detail__check">
-                                <input type="checkbox" id="food4">
-                                <label for="food4">1 vanilla or plain yogurt, 170g container</label>
-                            </div>
-                            <div class="recipe-detail__check">
-                                <input type="checkbox" id="food5">
-                                <label for="food5">White flour</label>
-                            </div>
-                            <div class="recipe-detail__check">
-                                <input type="checkbox" id="food6">
-                                <label for="food6">1.5 yogurt containers milk</label>
-                            </div>
-                            <div class="recipe-detail__check">
-                                <input type="checkbox" id="food7">
-                                <label for="food7">1/4 tsp cinnamon</label>
-                            </div>
-                            <div class="recipe-detail__check">
-                                <input type="checkbox" id="food8">
-                                <label for="food8">1 cup fresh blueberries</label>
+                            <div class="recipe-detail__ingredients">
+                                <h3 data-aos="fade-up" class="ingredients__title">Ingredients</h3>
+                                <div data-aos="fade-up" class="recipe-detail__check">
+                                    <input type="checkbox" id="food1">
+                                    <label for="food1">4 Tbsp (57 gr) butter</label>
+                                </div>
+                                <div data-aos="fade-up" class="recipe-detail__check">
+                                    <input type="checkbox" id="food2">
+                                    <label for="food2">2 large eggs</label>
+                                </div>
+                                <div data-aos="fade-up" class="recipe-detail__check">
+                                    <input type="checkbox" id="food3">
+                                    <label for="food3">2 yogurt containers granulated sugar</label>
+                                </div>
+                                <div data-aos="fade-up" class="recipe-detail__check">
+                                    <input type="checkbox" id="food4">
+                                    <label for="food4">1 vanilla or plain yogurt, 170g container</label>
+                                </div>
+                                <div data-aos="fade-up" class="recipe-detail__check">
+                                    <input type="checkbox" id="food5">
+                                    <label for="food5">White flour</label>
+                                </div>
+                                <div data-aos="fade-up" class="recipe-detail__check">
+                                    <input type="checkbox" id="food6">
+                                    <label for="food6">1.5 yogurt containers milk</label>
+                                </div>
+                                <div data-aos="fade-up" class="recipe-detail__check">
+                                    <input type="checkbox" id="food7">
+                                    <label for="food7">1/4 tsp cinnamon</label>
+                                </div>
+                                <div data-aos="fade-up" class="recipe-detail__check">
+                                    <input type="checkbox" id="food8">
+                                    <label for="food8">1 cup fresh blueberries</label>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-12 col-lg-7">
                         <ul class="recipe-detail__info-list">
-                            <li><span>01.</span>
+                            <li data-aos="fade-up"><span>01.</span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui.
                                     Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in
                                     iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis
                                     purus.
                                     Orci varius natoque penatibus et magni.</p>
                             </li>
-                            <li><span>02.</span>
+                            <li data-aos="fade-up"><span>02.</span>
                                 <p>Sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse
                                     potenti.
                                     Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor
                                     enim. Phasellus posuere vestibulum ipsum, eget lobortis purus.</p>
                             </li>
-                            <li><span>03.</span>
+                            <li data-aos="fade-up"><span>03.</span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui.
                                     Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in
                                     iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum</p>
                             </li>
-                            <li><span>04.</span>
+                            <li data-aos="fade-up"><span>04.</span>
                                 <p>Sit amet, consectetur adipiscing elit. Vestibulum nec varius dui. Suspendisse
                                     potenti.
                                     Vestibulum ac pellentesque tortor. Aenean congue sed metus in iaculis. Cras a tortor
                                     enim. Phasellus posuere vestibulum ipsum, eget lobortis.</p>
                             </li>
-                            <li><span>05.</span>
+                            <li data-aos="fade-up"><span>05.</span>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec varius dui.
                                     Suspendisse potenti. Vestibulum ac pellentesque tortor. Aenean congue sed metus in
                                     iaculis. Cras a tortor enim. Phasellus posuere vestibulum ipsum, eget lobortis
@@ -169,9 +193,7 @@
                 </div>
             </div>
         </section>
-        <div class="scroll-to-top">
-            <a href="#" class="scroll-btn"><i class="fas fa-angle-double-up"></i></a>
-        </div>
+
     </main>
     <footer>
         <section class="footer-bot">
@@ -203,6 +225,17 @@
             </div>
         </section>
     </footer>
+    <div class="to-top">
+        <a href="#" class="scroll-btn">
+            <i class="fas fa-angle-double-up"></i>
+        </a>
+    </div>
+
+    <script src="js/scroll.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

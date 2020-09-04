@@ -63,21 +63,27 @@ ul.recipe-detail__rating > li {
     position: relative;
     background: #ff2a6b;
     color: white;
+    width: 115%;
     padding: 22px 50px;
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
 }
-.recipe-detail__text::after {
+/* .recipe-detail__text::after {
     position: absolute;
     content: "";
     right: -35px;
     top: 0;
     border-top: 110px solid #ff2a6b;
     border-right: 35px solid transparent;
-}
+} */
 .recipe-detail__text > p {
     font-size: 15px;
+    margin-bottom: 15px;
+}
+.recipe-detail__text > p:nth-child(3) {
+    margin-bottom: 0;
 }
 .recipe-detail__ingredients {
-    padding: 50px 0 0 50px;
+    padding: 50px 30px 50px 50px;
 }
 .ingredients__title {
     font-size: 36px;
@@ -86,38 +92,44 @@ ul.recipe-detail__rating > li {
     color: #474747;
 }
 .recipe-detail__check {
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     display: flex;
     align-items: flex-start;
 }
 
 input[type="checkbox"] {
+    display: none;
+}
+.recipe-detail__check label {
+    position: relative;
+    padding-left: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 300;
+}
+input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0px;
     width: 27px;
     height: 27px;
     background: #fff;
     border: 1px solid #aaaaaa;
     cursor: pointer;
 }
-.recipe-detail__check label {
-    position: relative;
-    padding-left: 40px;
-    cursor: pointer;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: 300;
+input[type="checkbox"]:checked + label::before {
+    background-color: #ff2a6b;
 }
 input[type="checkbox"]:checked + label::after {
     position: absolute;
     content: "";
-    top: 0px;
-    left: -27px;
-    width: 27px;
-    height: 27px;
-    background-image: url(../images/icon/check-2.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-color: #ff2a6b;
-    border-color: #ff2a6b;
+    top: 8px;
+    left: 5px;
+    height: 7px;
+    width: 17px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: rotate(-45deg);
 }
 
 /* recipe-detail__info */
